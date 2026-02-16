@@ -3,22 +3,22 @@ Esse projeto tem como objetivo criar um sistema simples de gerenciamento de func
 Classes:
 - Funcionario:
     - Atributos:
-        - _nome
-        - _cargo
-        - _salario
+        v- _nome
+        v- _cargo
+        v- _salario
     - métodos:
-        - __init__(self, nome, cargo, salario)
+        v- __init__(self, nome, cargo, salario)
         - getters e setters com @property
-        - aumentar_salario(percentual)
-        - exibir_info()
+        v- aumentar_salario(percentual)
+        v- exibir_info()
 
 - Empresa:
     - Atributos:
-        - _nome
-        - _funcionarios (lista)
+        v- _nome
+        v- _funcionarios (lista)
     - Métodos:
-        - contratar(funcionario)
+        v- contratar(funcionario)
         - demitir(nome)
-        - listar_funcionarios()
+        v- listar_funcionarios()
         - folha_pagamento()
         - buscar_por_cargo(cargo)
