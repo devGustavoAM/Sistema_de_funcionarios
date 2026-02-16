@@ -26,7 +26,7 @@ def main():
     empresa1.contratar(funcionario19)
     empresa1.contratar(funcionario20)
     
-    empresa1.folha_de_pagamento()
+    empresa1.buscar_por_cargo("g")
     
 if __name__ == "__main__":
     main()

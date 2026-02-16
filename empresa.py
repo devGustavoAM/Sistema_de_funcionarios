@@ -31,3 +31,8 @@ class Empresa:
         for funcionario in self._funcionarios:
             folha_pag += funcionario._salario
         print(f"Total da folha: R$ {folha_pag:.2f}\nTotal de funcionários: {self._contratados}\nMédia salarial: R$ {(folha_pag / self._contratados):.2f}")
+        
+    def buscar_por_cargo(self, cargo = ''):
+        for i, funcionario in enumerate(self._funcionarios):
+            if cargo.lower() in funcionario._cargo.lower():
+                print(f"{(funcionario._cargo)} -> {funcionario._nome}")
