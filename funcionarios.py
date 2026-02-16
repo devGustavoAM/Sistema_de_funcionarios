@@ -4,10 +4,8 @@ class Funcionario:
         self._cargo = cargo
         self._salario = salario
         
-    def __str__(self):
-        x = f"Salário: {self._nome}"
-        a = '=' * len(x)
-        return f"{a}\nNome: {self._nome}\nCargo: {self._cargo}\nSalário: {self._salario:.2f}"
+    def __str__(self):        
+        return f"Nome: {self._nome}\nCargo: {self._cargo}\nSalário: {self._salario:.2f}"
         
     def exibir_info(self):
         print(f"Nome: {self._nome}\nCargo: {self._cargo}\nSalário: {self._salario:.2f}")
